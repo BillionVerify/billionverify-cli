@@ -6,7 +6,7 @@ import { downloadCommand } from "./commands/download.js";
 import { creditsCommand } from "./commands/credits.js";
 import { configCommand } from "./commands/config.js";
 
-const VERSION = "1.0.0";
+const VERSION = "1.0.1";
 
 const HELP = `
   \x1b[1mbillionverify\x1b[0m - Email verification from the command line

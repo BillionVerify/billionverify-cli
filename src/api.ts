@@ -18,7 +18,7 @@ export async function apiRequest<T>(
   try {
     const headers: Record<string, string> = {
       "BV-API-KEY": apiKey,
-      "User-Agent": "billionverify-cli/1.0.0",
+      "User-Agent": "billionverify-cli/1.0.1",
     };
     if (body) headers["Content-Type"] = "application/json";
 
@@ -65,7 +65,7 @@ export async function uploadFile(
     method: "POST",
     headers: {
       "BV-API-KEY": apiKey,
-      "User-Agent": "billionverify-cli/1.0.0",
+      "User-Agent": "billionverify-cli/1.0.1",
     },
     body: formData,
   });
@@ -99,7 +99,7 @@ export async function downloadResults(
   const res = await fetch(url, {
     headers: {
       "BV-API-KEY": apiKey,
-      "User-Agent": "billionverify-cli/1.0.0",
+      "User-Agent": "billionverify-cli/1.0.1",
     },
     redirect: "follow",
   });
